@@ -1,0 +1,51 @@
+/*Slide bar*/
+#slider-bar{
+    width: 100vw;
+    /*height: auto;
+    float: left;
+    padding: 20px 220px;*/
+}
+
+.carousel-caption {
+    top: 40vh;
+    bottom: auto;
+}
+
+.carousel-caption h3{
+    /*color: #1E2D3B;*/
+    color: black;
+	font-size: 50px;
+	font-family: 'lato';
+	letter-spacing: 5px;
+	font-weight: bold;
+}
+
+.carousel-caption h4{
+	font-size: 30px;
+	/*word-spacing: 30px;*/
+	letter-spacing: 10px;
+    color: black;
+}
+
+.carousel-caption button{
+	padding: 10px 30px 10px 30px;
+	
+	font-size: 20px;
+	text-decoration: none;
+	border:1px solid white;
+	background-color: rgba(255,255,255,0);
+}
+
+.carousel-caption button:hover{
+	color:black;
+/* 	background-color:white;*/
+	background-color:#FFFFFF;
+}
+
+/*Product*/
+.CategoryProduct{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 20px 220px;
+}
