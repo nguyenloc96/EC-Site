@@ -1,4 +1,4 @@
 cd ..
 git add *
-git commit -m "add shop.html, shop.css, shop.js. Edit fixed menu, add slide"
+git commit -m "Final slide add CategoryProduct in shop.html"
 git push origin phuong

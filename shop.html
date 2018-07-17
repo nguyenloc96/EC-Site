@@ -15,7 +15,7 @@
 
     <link rel="icon" href="https://www.wix.com/favicon.ico" type="image/x-icon">
     <!-- File Css -->
-    <link rel="stylesheet" href="css/layout.css" />
+    <!-- <link rel="stylesheet" href="css/layout.css" /> -->
     <link rel="stylesheet" href="css/shop.css" />
     <!--Fontawsome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
@@ -81,7 +81,7 @@
                     <div class="logo">
                         <img src="https://static.wixstatic.com/media/8ce9c1_dff86f310d474a53a223de3c05dace36~mv2.jpg/v1/fill/w_598,h_178,al_c,q_80,usm_0.66_1.00_0.01/8ce9c1_dff86f310d474a53a223de3c05dace36~mv2.webp">
                     </div>
-                    <div class="menu-item">
+                    <div class="menu-item selected">
                         <span id="shop" data-toggle="dropdown">SHOP</span>
                         <div id="dropdown-shop" class="dropdown-menu" aria-labelledby="shop">
                             <button class="dropdown-item">FUOCO (スチールパーティション)</button>
@@ -93,7 +93,7 @@
                     <div class="menu-item">
                         <span>2D-3DPlanner</span>
                     </div>
-                    <div class="menu-item selected">
+                    <div class="menu-item">
                         <span id="account" data-toggle="dropdown">ACCOUNT</span>
                         <div id="dropdown-account" class="dropdown-menu" aria-labelledby="account">
                             <button class="dropdown-item" id="my-account">My Account</button>
@@ -105,64 +105,107 @@
         </div>
         <div id="slider-bar">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="img/slide-bar/Slide1.jpg" alt="Slide 1">
-                <div class="carousel-caption">
-                    <h3>ONLINE</h3>
-                    <h3>PARTITION SHOP</h3>
-                    <h4>Divide your space.</h4>
-                    <button>Try 2D/3D Planner</button>
-                </div>
-              </div>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="img/slide-bar/Slide1.jpg" alt="Slide 1">
+                    <div class="carousel-caption">
+                        <h3>ONLINE</h3>
+                        <h3>PARTITION SHOP</h3>
+                        <h4>Divide your space.</h4>
+                        <button>Try 2D/3D Planner</button>
+                    </div>
+                  </div>
 
-              <div class="item">
-                <img src="img/slide-bar/Slide2.jpg" alt="Slide 2">
-                <div class="carousel-caption">
-                    <h3>ONLINE</h3>
-                    <h3>PARTITION SHOP</h3>
-                    <h4>Divide your space.</h4>
-                    <button>Try 2D/3D Planner</button>
+                  <div class="item">
+                    <img src="img/slide-bar/Slide2.jpg" alt="Slide 2">
+                    <div class="carousel-caption">
+                        <h3>ONLINE</h3>
+                        <h3>PARTITION SHOP</h3>
+                        <h4>Divide your space.</h4>
+                        <button>Try 2D/3D Planner</button>
+                    </div>
+                  </div>
+                
+                  <div class="item">
+                    <img src="img/slide-bar/Slide3.jpg" alt="Slide 3">
+                    <div class="carousel-caption">
+                        <h3>ONLINE PARTITION</h3>
+                        <h3>SHOP</h3>
+                        <h4>Divide your space.</h4>
+                        <button>Try 2D/3D Planner</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            
-              <div class="item">
-                <img src="img/slide-bar/Slide3.jpg" alt="Slide 3">
-                <div class="carousel-caption">
-                    <h3>ONLINE PARTITION</h3>
-                    <h3>SHOP</h3>
-                    <h4>Divide your space.</h4>
-                    <button>Try 2D/3D Planner</button>
-                </div>
-              </div>
-            </div>
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <svg x="0px" y="0px" viewBox="0 0 39 11" enable-background="new 0 0 39 11">
+                        <polygon points="33.5,0 32.8,0.7 37.1,5 0,5 0,6 37.1,6 32.8,10.3 33.5,11 39,5.5 " fill="white">
+                        </polygon>
+                  </svg>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <svg version="1.1" x="0px" y="0px" viewBox="0 0 39 11" enable-background="new 0 0 39 11">
+                        <polygon points="33.5,0 32.8,0.7 37.1,5 0,5 0,6 37.1,6 32.8,10.3 33.5,11 39,5.5 " fill="white">
+                        </polygon>
+                  </svg>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
         </div>
     </header>
     <content>
-        <div class="Slide">
-            
-        </div>
         <div class="CategoryProduct">
-            
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/category-product/item1.png">
+                    <button>
+                        Add to CART
+                    </button>
+                    <h4>AQUA パネル PG</h4>
+                    <h4>10000</h4>
+                    <h5>アルミパーティション用パネルです。パネルとガラスが接合されています。</h5>
+                    <a href="PartitionList/FUOCO-パネル-PG">Read More</a>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="col-4">
+                    <img src="img/category-product/item1.png">
+                </div>
+                <div class="col-4">
+                    <img src="img/category-product/item1.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/category-product/item1.png">
+                </div>
+                <div class="col-4">
+                    <img src="img/category-product/item1.png">
+                </div>
+                <div class="col-4">
+                    <img src="img/category-product/item1.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/category-product/item1.png">
+                </div>
+                <div class="col-4">
+                    <img src="img/category-product/item1.png">
+                </div>
+                <div class="col-4">
+                    <img src="img/category-product/item1.png">
+                </div>
+            </div>
         </div>
     </content>
     <footer>

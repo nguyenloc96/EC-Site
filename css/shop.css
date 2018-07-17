@@ -1,3 +1,182 @@
+* {
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    font-family: Arial ,Helvetica, sans-serif;
+}
+/* Dành cho điện thoại hiện ngang*/
+@media all and (max-width: 479px){
+    .title-pw h1{
+        font-size: 25px;
+    }
+    .title-pw span{
+        font-size: 9px;
+    }
+    #no-pw{
+        font-size: 9px;
+    }
+    .focus-pw{
+        padding: 0px;
+    }
+}
+/* Dành cho điện thoại hiện ngang*/
+@media all and (min-width: 480px) and (max-width: 767px) {
+    .title-pw h1{
+        font-size: 30px;
+    }
+    .title-pw span{
+        font-size: 11px;
+    }
+    .focus-pw{
+        padding: 0px;
+    }
+    #no-pw{
+        font-size: 11px;
+    }
+} 
+/* Dành cho máy tính bảng hiện dọc */
+@media all and (min-width: 768px) and (max-width: 1023px){
+    .title-pw{
+        height: 25%;
+    }
+    .focus-pw{
+        padding: 10px 10px;
+    }
+}
+/* Dành cho máy tính bảng hiện ngang*/
+@media all and (min-width: 1024px) and (max-width: 1365px){
+    .title-pw{
+        height: 20%;
+    }
+    .focus-pw{
+        padding: 10px 50px;
+    }
+}
+/* Mysite */
+content{
+    width: 100%;
+    float: left;
+}
+footer{
+    width: 100%;
+    float: left;
+    background-color: #1E2D3B;
+    color: #fff;
+    border: 1px solid yellow;
+}
+
+/* Header */
+
+/* Commercial */
+#commercial{
+    display: flex;
+    height: 53px;
+    border-bottom: 3px solid #a0138e;
+    background: #eff1f2;
+    box-sizing: border-box;
+    justify-content: center;
+    align-self: center;
+    line-height: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+
+    /*fixed header menu*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#commercial span{
+    color: #20303C;
+    font-size: 13px;
+    font-weight: bold;
+}
+#commercial .start button{
+    padding: 0px 30px;
+    margin: 4px;
+    line-height: 40px;
+    background: #eff1f2;
+    color: #a0138e;
+    border: 1px solid #a0138e;
+    border-radius: 50px;
+    font-weight: bold;
+}
+#commercial:hover{
+    background: #fff;
+}
+#commercial:hover .start button{
+    background: #a0138e;
+    color: #fff;
+}
+.wix-logo{
+    fill: #20303C;
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+    padding-bottom: 6px;
+}
+/* Menu */
+#menu{
+    height: 90px;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    /*fixed header menu*/
+    position: fixed;
+    top: 53px;
+    width: 100%;
+    z-index: 1000;
+}
+.list-menu{
+    width: 100%;
+    height: 100%;
+    padding: 0px 180px;
+    cursor: pointer;
+}
+.logo, .menu-item span{
+    float: left;
+    width: 25%;
+    height: 100%;
+    font-size: 20px;
+    line-height: 90px;
+    color: #1E2D3B;
+    transition: color 0.4s ease 0s;
+    letter-spacing: -0.5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+}
+.selected span{
+    color: #FF3447;
+}
+.menu-item:hover span{
+    color: #FF3447;
+}
+.dropdown-menu .dropdown-item{
+    text-align: center;
+    text-transform: uppercase;
+}
+.dropdown-menu .dropdown-item:hover{
+    color: #FF3447;
+}
+.dropdown-menu .dropdown-item:active{
+    color: #FF3447;
+    background-color: #fff;
+}
+
+#dropdown-shop{
+    margin-left: -20px;
+}
+#dropdown-account{
+    margin-left: 45px;
+}
+
 /*Slide bar*/
 #slider-bar{
     width: 100vw;
@@ -50,10 +229,66 @@
 	background-color:#FFFFFF;
 }
 
+.carousel-control{
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+
+	/*border: 3px solid green;*/
+}
+
+.carousel-control.left,.carousel-control.right{
+    background: none !important;
+    /*filter: progid:none !important;*/
+}
+
+.left.carousel-control svg{
+	transform: rotate(180deg);
+}
+
+.carousel-control svg{
+	width: 60px;
+	height: 17px;
+	position: absolute;
+	top: 50%;
+	display: block;
+	/*border: 3px solid blue;*/
+}
+
 /*Product*/
 .CategoryProduct{
     width: 100%;
     height: auto;
     float: left;
-    padding: 20px 220px;
+    padding:0 220px;
+}
+
+.CategoryProduct .row{
+	border-bottom: 20px solid #f7f7f7;
+}
+
+.CategoryProduct .row div{
+	background-color: white;
+	text-align: center;
+	border-right:20px solid #f7f7f7;
+}
+
+.CategoryProduct .row div:nth-child(1){
+	
+}
+
+.CategoryProduct .row div:nth-child(2){
+}
+
+.CategoryProduct .row div:nth-child(3){
+	border-right-color: white;
+}
+
+.CategoryProduct img{
+	margin-top: 79px;
+	width: 100%;
+	height: 226px;
 }
