@@ -70,65 +70,18 @@ body{
     float: left;
     visibility: hidden;
 }
-/* Dành cho điện thoại hiện ngang*/
-@media all and (max-width: 479px){
-    .title-pw h1{
-        font-size: 25px;
-    }
-    .title-pw span{
-        font-size: 9px;
-    }
-    #no-pw{
-        font-size: 9px;
-    }
-    .focus-pw{
-        padding: 0px;
-    }
-}
-/* Dành cho điện thoại hiện ngang*/
-@media all and (min-width: 480px) and (max-width: 767px) {
-    .title-pw h1{
-        font-size: 30px;
-    }
-    .title-pw span{
-        font-size: 11px;
-    }
-    .focus-pw{
-        padding: 0px;
-    }
-    #no-pw{
-        font-size: 11px;
-    }
-} 
-/* Dành cho máy tính bảng hiện dọc */
-@media all and (min-width: 768px) and (max-width: 1023px){
-    .title-pw{
-        height: 25%;
-    }
-    .focus-pw{
-        padding: 10px 10px;
-    }
-}
-/* Dành cho máy tính bảng hiện ngang*/
-@media all and (min-width: 1024px) and (max-width: 1365px){
-    .title-pw{
-        height: 20%;
-    }
-    .focus-pw{
-        padding: 10px 50px;
-    }
-}
+
 /* Mysite */
 content{
     width: 100%;
     float: left;
+    margin-top: 130px;
 }
 footer{
     width: 100%;
     float: left;
-    background-color: #1E2D3B;
+    background-color: rgba(47,46,46,1);
     color: #fff;
-    border: 1px solid yellow;
 }
 /* Header */
 
@@ -144,6 +97,9 @@ footer{
     line-height: 50px;
     margin: 0 auto;
     cursor: pointer;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 #commercial span{
     color: #20303C;
@@ -179,6 +135,11 @@ footer{
     height: 90px;
     text-align: center;
     justify-content: center;
+    position: fixed;
+    background-color: #FDFEFE;
+    top: 50px;
+    width: 100%;
+    z-index: 100;
 }
 .list-menu{
     width: 100%;
@@ -276,7 +237,7 @@ footer{
     cursor: pointer;
     padding: 10px 15px;
 }
-.input-email input:hover, .input-password input:hover{
+.input-email input:hover, .input-password input:hover, .input-email input:focus, .input-password input:focus{
     box-shadow: none;
 }
 .btn-login{
@@ -315,3 +276,329 @@ footer{
     color: rgba(170, 35, 47, 1);
 }
 /*Footer*/
+.footer{
+    min-height: 400px;
+    margin: 0px 200px;
+}
+.f-shop, .f-account, .f-contact{
+    float: left;
+    width: 33.33%;
+    margin-top: 25px;
+    line-height: 2;
+    text-justify: center;
+}
+.f-shop{
+    padding-left: 25px;
+}
+.f-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+.footer ul li{
+    list-style-type: none;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: lighter !important;
+    letter-spacing: normal;
+}
+.footer ul li a{
+    color: #eff1f2;
+    text-decoration: none;
+}
+.detail-contact{
+    font-size: 13px;
+    letter-spacing: 1px !important;
+    font-style: italic;
+    text-align: center;
+}
+.r2-contact-left{
+    float: left;
+    width: 25%;
+}
+.r2-contact-right{
+    float: left;
+    width: 70%;
+    margin-top: 15px;
+    line-height: 0.5;
+}
+a.link-http{
+    font-size: 20px;
+    color: #0069d9 !important;
+}
+a.link-http:hover{
+    text-decoration: none;
+    color: #FF3447 !important;
+}
+
+/* Responesive */
+/* Dành cho điện thoại hiện ngang*/
+@media all and (max-width: 479px){
+    .title-pw h1{
+        font-size: 25px;
+    }
+    .title-pw span{
+        font-size: 9px;
+    }
+    #no-pw{
+        font-size: 9px;
+    }
+    .focus-pw{
+        padding: 0px;
+    }
+
+    .wix-logo{
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
+    }
+    #commercial{
+        height: 43px;
+        line-height: 43px;
+    }
+    #commercial span{
+        font-size: 6px;
+    }
+    #commercial .start button{
+        line-height: 20px;
+        padding: 0px 10px;
+    }
+    .list-menu{
+        padding: 0px 15px;
+    }
+    #menu{
+        height: 60px;
+    }
+    .logo, .menu-item span{
+        font-size: 14px;
+        line-height: 55px;
+    }
+    .login-title{
+        padding-top: 15px;
+    }
+    .login-title h4{
+        font-size: 14px;
+    }
+    .email-password{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .input-email, .input-password{
+        height: 30px;
+    }
+    .input-email input, .input-password input{
+        margin-left: 10px;
+        font-size: 12px;
+        width: 55%;
+    }
+    .btn-login{
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        margin-top: 10px; 
+    }
+    .btn-login a{
+        height: 40px;
+        border-radius: 10px;
+        line-height: 30px;
+    }
+    .email-password label h5{
+        font-size: 14px;
+    }
+    .footer{
+        margin: 0px 20px;
+    }
+    #login{
+        padding: 0px 20px;
+    }
+    .page-register{
+        padding: 40px 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .footer{
+        padding: 20px 20px;
+    }
+    .f-shop, .f-account{
+        width: 50%;
+        min-height: 200px;
+        margin: 0 auto;
+    }
+    .f-contact{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .f-shop {
+        padding-left: 0px;
+    }
+    .f-title{
+        font-size: 20px;
+    }
+    .footer ul li{
+        font-size: 14px;
+    }
+    .detail-contact{
+        font-size: 11px;
+        text-align: center;
+    }
+}
+/* Dành cho điện thoại hiện ngang*/
+@media all and (min-width: 480px) and (max-width: 767px) {
+    .title-pw h1{
+        font-size: 30px;
+    }
+    .title-pw span{
+        font-size: 11px;
+    }
+    .focus-pw{
+        padding: 0px;
+    }
+    #no-pw{
+        font-size: 11px;
+    }
+    .wix-logo{
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
+    }
+    #commercial{
+        height: 43px;
+        line-height: 43px;
+    }
+    #commercial span{
+        font-size: 11px;
+    }
+    #commercial .start button{
+        line-height: 20px;
+        padding: 0px 10px;
+    }
+    .list-menu{
+        padding: 0px 15px;
+    }
+    #menu{
+        height: 60px;
+    }
+    .logo, .menu-item span{
+        font-size: 14px;
+        line-height: 55px;
+    }
+    .login-title{
+        padding-top: 15px;
+        padding-left: 40px;
+    }
+    .login-title h4{
+        font-size: 14px;
+    }
+    .email-password{
+        width: 100%;
+        padding: 10px 70px;
+    }
+    .input-email, .input-password{
+        height: 30px;
+    }
+    .input-email input, .input-password input{
+        margin-left: 10px;
+        font-size: 15px;
+        width: 70%;
+    }
+    .btn-login{
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        margin-top: 10px; 
+    }
+    .btn-login a{
+        height: 40px;
+        border-radius: 10px;
+        line-height: 30px;
+    }
+    .email-password label h5{
+        font-size: 14px;
+    }
+    .footer{
+        margin: 0px 20px;
+    }
+    #login{
+        padding: 0px 20px;
+    }
+    .page-register{
+        padding: 40px 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .footer{
+        padding: 0px 20px;
+    }
+    .f-shop, .f-account{
+        width: 28%;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .f-contact{
+        width: 44%;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .f-title{
+        font-size: 20px;
+    }
+    .footer ul li{
+        font-size: 14px;
+    }
+    .detail-contact{
+        font-size: 15px;
+        text-align: center;
+    }
+} 
+/* Dành cho máy tính bảng hiện dọc */
+@media all and (min-width: 768px) and (max-width: 1023px){
+    .title-pw{
+        height: 25%;
+    }
+    .focus-pw{
+        padding: 10px 10px;
+    }
+    .list-menu{
+        padding: 0px 20px;
+    }
+    .footer{
+        margin: 0px 20px;
+    }
+    #login{
+        padding: 0px 80px;
+    }
+    .page-register{
+        padding: 40px 20px;
+        font-size: 27px;
+    }
+    .f-shop, .f-account{
+        width: 28%;
+    }
+    .f-contact{
+        width: 44%;
+    }
+    .f-shop, .f-account, .f-contact{
+        line-height: 2;
+    }
+}
+/* Dành cho máy tính bảng hiện ngang*/
+@media all and (min-width: 1024px) and (max-width: 1365px){
+    .title-pw{
+        height: 20%;
+    }
+    .focus-pw{
+        padding: 10px 50px;
+    }
+    .list-menu{
+        padding: 0px 20px;
+    }
+    .footer{
+        margin: 0px 20px;
+    }
+    #login{
+        padding: 0px 80px;
+    }
+    .page-register{
+        padding: 40px 20px;
+    }
+}
