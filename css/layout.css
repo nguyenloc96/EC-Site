@@ -1,0 +1,317 @@
+* {
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    font-family: Arial ,Helvetica, sans-serif;
+}
+
+/* Check password */
+#check-password{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.check-password{
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    text-align: center;
+}
+.title-pw{
+    float: left;
+    width: 100%;
+    height: 30%;
+}
+.title-pw h1{
+    line-height: .8em;
+    font-weight: normal;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 15px;
+    color: #3B3A3A;
+}
+.title-pw span{
+    font-size: 16px;
+    font-weight: 300;
+    color: #3B3A3A;
+    text-align: center;
+}
+.focus-pw{
+    float: left;
+    width: 100%;
+    padding: 10px 130px;
+    padding-top: 50px;
+    height: 70%;
+}
+.focus-pw input{
+    margin: auto;
+    width: 100%;
+    font-size: 15px;
+}
+.focus-pw button{
+    width: 100%;
+    color: #EDCD1F;
+    background-color: rgba(59, 58, 58, 1);
+    font-size: 15px;
+}
+.focus-pw input:hover , .focus-pw input:focus, .focus-pw button:focus, .focus-pw button:hover{
+    box-shadow: none;
+}
+.focus-pw button:hover{
+    background-color: #EDCD1F;
+    color: rgba(59, 58, 58, 1);;
+}
+#no-pw{
+    clear: both;
+    text-align: left;
+    float: left;
+    visibility: hidden;
+}
+/* Dành cho điện thoại hiện ngang*/
+@media all and (max-width: 479px){
+    .title-pw h1{
+        font-size: 25px;
+    }
+    .title-pw span{
+        font-size: 9px;
+    }
+    #no-pw{
+        font-size: 9px;
+    }
+    .focus-pw{
+        padding: 0px;
+    }
+}
+/* Dành cho điện thoại hiện ngang*/
+@media all and (min-width: 480px) and (max-width: 767px) {
+    .title-pw h1{
+        font-size: 30px;
+    }
+    .title-pw span{
+        font-size: 11px;
+    }
+    .focus-pw{
+        padding: 0px;
+    }
+    #no-pw{
+        font-size: 11px;
+    }
+} 
+/* Dành cho máy tính bảng hiện dọc */
+@media all and (min-width: 768px) and (max-width: 1023px){
+    .title-pw{
+        height: 25%;
+    }
+    .focus-pw{
+        padding: 10px 10px;
+    }
+}
+/* Dành cho máy tính bảng hiện ngang*/
+@media all and (min-width: 1024px) and (max-width: 1365px){
+    .title-pw{
+        height: 20%;
+    }
+    .focus-pw{
+        padding: 10px 50px;
+    }
+}
+/* Mysite */
+content{
+    width: 100%;
+    float: left;
+}
+footer{
+    width: 100%;
+    float: left;
+    background-color: #1E2D3B;
+    color: #fff;
+    border: 1px solid yellow;
+}
+/* Header */
+
+/* Commercial */
+#commercial{
+    display: flex;
+    height: 53px;
+    border-bottom: 3px solid #a0138e;
+    background: #eff1f2;
+    box-sizing: border-box;
+    justify-content: center;
+    align-self: center;
+    line-height: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#commercial span{
+    color: #20303C;
+    font-size: 13px;
+    font-weight: bold;
+}
+#commercial .start button{
+    padding: 0px 30px;
+    margin: 4px;
+    line-height: 40px;
+    background: #eff1f2;
+    color: #a0138e;
+    border: 1px solid #a0138e;
+    border-radius: 50px;
+    font-weight: bold;
+}
+#commercial:hover{
+    background: #fff;
+}
+#commercial:hover .start button{
+    background: #a0138e;
+    color: #fff;
+}
+.wix-logo{
+    fill: #20303C;
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+    padding-bottom: 6px;
+}
+/* Menu */
+#menu{
+    height: 90px;
+    text-align: center;
+    justify-content: center;
+}
+.list-menu{
+    width: 100%;
+    height: 100%;
+    padding: 0px 180px;
+    cursor: pointer;
+}
+.logo, .menu-item span{
+    float: left;
+    width: 25%;
+    height: 100%;
+    font-size: 20px;
+    line-height: 90px;
+    color: #1E2D3B;
+    transition: color 0.4s ease 0s;
+    letter-spacing: -0.5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+}
+.selected span{
+    color: #FF3447;
+}
+.menu-item:hover span{
+    color: #FF3447;
+}
+.dropdown-menu .dropdown-item{
+    text-align: center;
+    text-transform: uppercase;
+}
+.dropdown-menu .dropdown-item:hover{
+    color: #FF3447;
+}
+.dropdown-menu .dropdown-item:active{
+    color: #FF3447;
+    background-color: #fff;
+}
+
+#dropdown-shop{
+    margin-left: -20px;
+}
+#dropdown-account{
+    margin-left: 45px;
+}
+/* Slider bar*/
+#slider-bar{
+    min-height: 600px;
+    background-image: url('../img/slide-bar/home.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Page Login */
+#login{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 20px 220px;
+}
+.login-title, .input-login, .page-register{
+    width: 100%;
+    float: left;
+}
+.login-title{
+    padding-top: 20px;
+}
+.email-password{
+    width: 70%;
+    float: left;
+    padding: 20px 20px;
+}
+.input-email , .input-password{
+    float: left;
+    width: 100%;
+    height: 60px;
+    margin: 10px 0px;
+}
+.input-email label, .input-password label{
+    float: left;
+}
+.input-email h5, .input-password h5{
+    line-height: 40px;
+}
+.input-email input, .input-password input{
+    float: left;
+    font-size: 15px;
+    width: 50%;
+    margin-left: 30px;
+    border: 1px solid rgba(170, 35, 47, 1);
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.input-email input:hover, .input-password input:hover{
+    box-shadow: none;
+}
+.btn-login{
+    width: 30%;
+    float: left;
+    padding-right: 20px;
+    margin-top: 47px;
+}
+.btn-login a{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(170, 35, 47, 1);
+    box-shadow: 0px 1px 10px 2px rgba(0,0,0,0.6);
+    border: solid rgba(43, 108, 163, 1) 0px;
+    color: #fff !important;
+    line-height: 80px;
+    white-space: nowrap;
+    margin: calc(-1 * 0px) 0px 0;
+}
+.btn-login a:hover{
+    background-color: rgba(255, 154, 163, 1);
+}
+.btn-login a.btn:focus{
+    box-shadow: 0px 1px 10px 2px rgba(0,0,0,0.6);
+}
+.page-register{
+    padding: 60px 20px;
+    font-size: 32px;  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: -1px;
+}
+.page-register a:hover{
+    text-decoration: none;
+    color: rgba(170, 35, 47, 1);
+}
+/*Footer*/
