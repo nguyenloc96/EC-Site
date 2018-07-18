@@ -101,10 +101,13 @@ footer{
     cursor: pointer;
 
     /* Fixed header */
-    z-index: 100;
+    z-index: 101;
     position: fixed;
     top: 0;
     width: 100%;
+
+    /* Thêm border bottom màu tím */
+    border-bottom: 3px solid #a0138e;
 }
 #commercial span{
     color: #20303C;
