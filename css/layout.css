@@ -41,25 +41,32 @@ footer{
     height: 100%;
     padding: 0px 180px;
     cursor: pointer;
+
+    /* Bố cục lại với display:flex */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
 .logo{
-    float: left;
-    width: 25%;
-    height: 100%;
+    width: 100%;
     font-size: 20px;
-    line-height: 90px;
     color: #1E2D3B;
     transition: color 0.4s ease 0s;
     letter-spacing: -0.5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.menu-item{
+    align-items: center;
+    width: 100%;
+}
+
 .menu-item span{
-    float: left;
-    width: 15%;
-    height: 100%;
+    display: block;
     font-size: 20px;
-    line-height: 90px;
     color: #1E2D3B;
     background-color: #FDFEFE;
     transition: color 0.4s ease 0s;
