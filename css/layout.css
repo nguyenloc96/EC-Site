@@ -7,75 +7,14 @@ body{
     margin: 0 auto;
     font-family: Arial ,Helvetica, sans-serif;
 }
-
-/* Check password */
-#check-password{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
+input:hover, input:focus, button:hover, button:focus{
+    box-shadow: none !important;
 }
-.check-password{
-    width: 50vw;
-    height: 50vh;
-    margin: auto;
-    text-align: center;
-}
-.title-pw{
-    float: left;
-    width: 100%;
-    height: 30%;
-}
-.title-pw h1{
-    line-height: .8em;
-    font-weight: normal;
-    font-size: 50px;
-    text-align: center;
-    padding-bottom: 15px;
-    color: #3B3A3A;
-}
-.title-pw span{
-    font-size: 16px;
-    font-weight: 300;
-    color: #3B3A3A;
-    text-align: center;
-}
-.focus-pw{
-    float: left;
-    width: 100%;
-    padding: 10px 130px;
-    padding-top: 50px;
-    height: 70%;
-}
-.focus-pw input{
-    margin: auto;
-    width: 100%;
-    font-size: 15px;
-}
-.focus-pw button{
-    width: 100%;
-    color: #EDCD1F;
-    background-color: rgba(59, 58, 58, 1);
-    font-size: 15px;
-}
-.focus-pw input:hover , .focus-pw input:focus, .focus-pw button:focus, .focus-pw button:hover{
-    box-shadow: none;
-}
-.focus-pw button:hover{
-    background-color: #EDCD1F;
-    color: rgba(59, 58, 58, 1);;
-}
-#no-pw{
-    clear: both;
-    text-align: left;
-    float: left;
-    visibility: hidden;
-}
-
 /* Mysite */
 content{
     width: 100%;
     float: left;
-    margin-top: 130px;
+    margin-top: 90px;
 }
 footer{
     width: 100%;
@@ -84,60 +23,6 @@ footer{
     color: #fff;
 }
 /* Header */
-
-
-
-/* Commercial */
-#commercial{
-    display: flex;
-    height: 53px;
-    border-bottom: 3px solid #a0138e;
-    background: #eff1f2;
-    box-sizing: border-box;
-    justify-content: center;
-    align-self: center;
-    line-height: 50px;
-    margin: 0 auto;
-    cursor: pointer;
-
-    /* Fixed header */
-    z-index: 101;
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-    /* Thêm border bottom màu tím */
-    border-bottom: 3px solid #a0138e;
-}
-#commercial span{
-    color: #20303C;
-    font-size: 13px;
-    font-weight: bold;
-}
-#commercial .start button{
-    padding: 0px 26px;
-    margin: 4px;
-    line-height: 35px;
-    background: #eff1f2;
-    color: #a0138e;
-    border: 1px solid #a0138e;
-    border-radius: 50px;
-    font-weight: bold;
-}
-#commercial:hover{
-    background: #fff;
-}
-#commercial:hover .start button{
-    background: #a0138e;
-    color: #fff;
-}
-.wix-logo{
-    fill: #20303C;
-    width: 40px;
-    height: 30px;
-    vertical-align: middle;
-    padding-bottom: 6px;
-}
 /* Menu */
 #menu{
     height: 90px;
@@ -147,7 +32,7 @@ footer{
     /* Fixed Header */
     position: fixed;
     background-color: #FDFEFE;
-    top: 50px;
+    top: 0px;
     width: 100%;
     z-index: 100;
 }
@@ -157,7 +42,7 @@ footer{
     padding: 0px 180px;
     cursor: pointer;
 }
-.logo, .menu-item span{
+.logo{
     float: left;
     width: 25%;
     height: 100%;
@@ -168,6 +53,20 @@ footer{
     letter-spacing: -0.5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.menu-item span{
+    float: left;
+    width: 15%;
+    height: 100%;
+    font-size: 20px;
+    line-height: 90px;
+    color: #1E2D3B;
+    background-color: #FDFEFE;
+    transition: color 0.4s ease 0s;
+    letter-spacing: -0.5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .logo img{
     width: 299px;
     height: 89px;
@@ -192,7 +91,7 @@ footer{
 }
 
 #dropdown-shop{
-    margin-left: -20px;
+    margin-left: -60px;
 }
 #dropdown-account{
     margin-left: 45px;
@@ -332,47 +231,100 @@ a.link-http:hover{
     color: #FF3447 !important;
 }
 
+/* Register */
+#register{
+    float: left;
+    width: 100%;
+    line-height: 2;
+}
+.form-register{
+    margin: 20px 260px;
+}
+.register-title h4{
+    font-size: 34px;
+    color: #3B3A3A;
+}
+.reg-row{
+    width: 100%;
+    height: 50px;
+    float: left;
+    padding: 5px;
+}
+.reg-lable{
+    width: 40%;
+    float: left;
+    text-align: right;
+    padding-right: 25px;
+    font-size: 20px;
+    margin-top: -3px;
+}
+.reg-mandatory{
+    width: 70px;
+    float: left;
+    padding-top: 5px;
+    font-size: 13px;
+}
+.reg-input{
+    width: 50%;
+    float: left;
+}
+.reg-input input, .reg-input select{
+    width: 300px;
+}
+.reg-purview{
+    width: 100%;
+    float: left;
+    padding: 5px;
+    margin: 40px 0px;
+    height: 400px;
+    overflow-y: scroll;
+}
+.detail-purview{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    border: 1px solid rgb(128,128,128);
+}
+.reg-btn{
+    width: 100%;
+    float: left;
+}
+.btn-back, .btn-register{
+    padding: 40px 20px;
+    float: left;
+    width: 50%;
+}
+.btn-back button, .btn-register button{
+    width: 150px;
+}
+.btn-back button:hover, .btn-register button:hover{
+    background-color: #FF3447;
+    border: 1px solid #fff;
+}
 /* Responesive */
 /* Dành cho điện thoại hiện ngang*/
 @media all and (max-width: 479px){
-    .title-pw h1{
-        font-size: 25px;
-    }
-    .title-pw span{
-        font-size: 9px;
-    }
-    #no-pw{
-        font-size: 9px;
-    }
-    .focus-pw{
+    /*login*/
+    .list-menu{
         padding: 0px;
     }
-
-    .wix-logo{
-        width: 20px;
-        height: 20px;
-        margin-top: 2px;
-    }
-    #commercial{
-        height: 43px;
-        line-height: 43px;
-    }
-    #commercial span{
-        font-size: 6px;
-    }
-    #commercial .start button{
-        line-height: 20px;
-        padding: 0px 10px;
-    }
-    .list-menu{
-        padding: 0px 15px;
-    }
     #menu{
+        top: 0px;
         height: 60px;
     }
-    .logo, .menu-item span{
-        font-size: 14px;
-        line-height: 55px;
+    .logo {
+        width: 100%;
+        position: relative;
+    }
+    .logo img{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .menu-item span{
+        width: 20%;
+        font-size: 11px;
+        line-height: 25px;
     }
     .login-title{
         padding-top: 15px;
@@ -406,6 +358,41 @@ a.link-http:hover{
     .email-password label h5{
         font-size: 14px;
     }
+    /*register*/
+    .form-register{
+        margin: 20px 10px;
+    }
+    .register-title h4{
+        font-size: 20px;
+    }
+    .reg-purview{
+        margin: 30px 0px;
+    }
+    .reg-purview h3{
+        font-size: 20px;
+        margin: 30px 0px;
+    }
+    .btn-back, .btn-register {
+        padding: 20px 0px;
+    }
+    .btn-back button, .btn-register button {
+        width: 120px;
+    }
+    .reg-lable {
+        width: 35%;
+        font-size: 15px;
+        margin-top: 3px;
+        padding-right: 10px;
+    }
+    .reg-mandatory {
+        width: 40px;
+        padding-top: 8px;
+        font-size: 10px;
+    }
+    .reg-input input, .reg-input select {
+        width: 160px;
+    }
+    /*footer*/
     .footer{
         margin: 0px 20px;
     }
@@ -445,44 +432,59 @@ a.link-http:hover{
 }
 /* Dành cho điện thoại hiện ngang*/
 @media all and (min-width: 480px) and (max-width: 767px) {
-    .title-pw h1{
-        font-size: 30px;
-    }
-    .title-pw span{
-        font-size: 11px;
-    }
-    .focus-pw{
+    .list-menu{
         padding: 0px;
     }
-    #no-pw{
-        font-size: 11px;
-    }
-    .wix-logo{
-        width: 20px;
-        height: 20px;
-        margin-top: 2px;
-    }
-    #commercial{
-        height: 43px;
-        line-height: 43px;
-    }
-    #commercial span{
-        font-size: 11px;
-    }
-    #commercial .start button{
-        line-height: 20px;
-        padding: 0px 10px;
-    }
-    .list-menu{
-        padding: 0px 15px;
-    }
     #menu{
+        top: 0px;
         height: 60px;
     }
-    .logo, .menu-item span{
-        font-size: 14px;
-        line-height: 55px;
+    .logo {
+        width: 100%;
+        position: relative;
     }
+    .logo img{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .menu-item span{
+        width: 20%;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    /*register*/
+    .form-register{
+        margin: 20px 100px;
+    }
+    .register-title h4{
+        font-size: 20px;
+    }
+    .reg-purview{
+        margin: 30px 0px;
+    }
+    .reg-purview h3{
+        font-size: 20px;
+        margin: 30px 0px;
+    }
+    .btn-back, .btn-register {
+        padding: 20px 0px;
+    }
+    .reg-lable {
+        width: 37%;
+        font-size: 15px;
+        margin-top: 3px;
+        padding-right: 10px;
+    }
+    .reg-mandatory {
+        width: 40px;
+        padding-top: 6px;
+        font-size: 12px;
+    }
+    .reg-input input, .reg-input select {
+        width: 230px;
+    }
+    /*login*/
     .login-title{
         padding-top: 15px;
         padding-left: 40px;
@@ -516,11 +518,12 @@ a.link-http:hover{
     .email-password label h5{
         font-size: 14px;
     }
-    .footer{
-        margin: 0px 20px;
-    }
     #login{
         padding: 0px 20px;
+    }
+    /*footer*/
+    .footer{
+        margin: 0px 20px;
     }
     .page-register{
         padding: 40px 10px;
@@ -553,18 +556,16 @@ a.link-http:hover{
 } 
 /* Dành cho máy tính bảng hiện dọc */
 @media all and (min-width: 768px) and (max-width: 1023px){
-    .title-pw{
-        height: 25%;
-    }
-    .focus-pw{
-        padding: 10px 10px;
-    }
     .list-menu{
         padding: 0px 20px;
     }
     .footer{
         margin: 0px 20px;
     }
+    .menu-item span{
+        font-size: 18px;
+    }
+    /*login*/
     #login{
         padding: 0px 80px;
     }
@@ -572,6 +573,23 @@ a.link-http:hover{
         padding: 40px 20px;
         font-size: 27px;
     }
+    /*register*/
+    .form-register{
+        margin: 20px 110px;
+    }
+    .register-title h4{
+        font-size: 28px;
+    }
+    .reg-purview h3{
+        font-size: 28px;
+    }
+    .reg-lable{
+        width: 30%;
+    }
+    .reg-input input, .reg-input select{
+        width: 260px;
+    }
+    /* footer */
     .f-shop, .f-account{
         width: 28%;
     }
@@ -584,21 +602,24 @@ a.link-http:hover{
 }
 /* Dành cho máy tính bảng hiện ngang*/
 @media all and (min-width: 1024px) and (max-width: 1365px){
-    .title-pw{
-        height: 20%;
-    }
-    .focus-pw{
-        padding: 10px 50px;
-    }
-    .list-menu{
-        padding: 0px 20px;
+    /*login*/
+    #login{
+        padding: 0px 80px;
     }
     .footer{
         margin: 0px 20px;
     }
-    #login{
-        padding: 0px 80px;
+    /*register*/
+    .form-register{
+        margin: 20px 110px;
     }
+    .register-title h4{
+        font-size: 28px;
+    }
+    .reg-purview h3{
+        font-size: 28px;
+    }
+    /*footer*/
     .page-register{
         padding: 40px 20px;
     }
