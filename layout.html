@@ -42,30 +42,13 @@
 <body>
     <header>
         <div class="w100">
-            <div id="commercial" class="w100">
-                <span>
-                    This site was designed with the
-                    <span>
-                        <svg class="wix-logo" viewBox="0 0 28 10.89" alt="wix">
-                            <path d="M16.02.2c-.55.3-.76.78-.76 2.14a2.17 2.17 0 0 1 .7-.42 3 3 0 0 0 .7-.4A1.62 1.62 0 0 0 17.22 0a3 3 0 0 0-1.18.2z"
-                                class="dot"></path>
-                            <path d="M12.77.52a2.12 2.12 0 0 0-.58 1l-1.5 5.8-1.3-4.75a4.06 4.06 0 0 0-.7-1.55 2.08 2.08 0 0 0-2.9 0 4.06 4.06 0 0 0-.7 1.55L3.9 7.32l-1.5-5.8a2.12 2.12 0 0 0-.6-1A2.6 2.6 0 0 0 0 .02l2.9 10.83a3.53 3.53 0 0 0 1.42-.17c.62-.33.92-.57 1.3-2 .33-1.33 1.26-5.2 1.35-5.47a.5.5 0 0 1 .34-.4.5.5 0 0 1 .4.5c.1.3 1 4.2 1.4 5.5.4 1.5.7 1.7 1.3 2a3.53 3.53 0 0 0 1.4.2l2.8-11a2.6 2.6 0 0 0-1.82.53zm4.43 1.26a1.76 1.76 0 0 1-.58.5c-.26.16-.52.26-.8.4a.82.82 0 0 0-.57.82v7.36a2.47 2.47 0 0 0 1.2-.15c.6-.3.75-.6.75-2V1.8zm7.16 3.68L28 .06a3.22 3.22 0 0 0-2.3.42 8.67 8.67 0 0 0-1 1.24l-1.34 1.93a.3.3 0 0 1-.57 0l-1.4-1.93a8.67 8.67 0 0 0-1-1.24 3.22 3.22 0 0 0-2.3-.43l3.6 5.4-3.7 5.4a3.54 3.54 0 0 0 2.32-.48 7.22 7.22 0 0 0 1-1.16l1.33-1.9a.3.3 0 0 1 .57 0l1.37 2a8.2 8.2 0 0 0 1 1.2 3.47 3.47 0 0 0 2.33.5z">
-                            </path>
-                        </svg>
-                    </span>
-                    .com website builder. Create your website today.
-                </span>
-                <span class="start">
-                    <button> Start Now </button>
-                </span>
-            </div>
             <div id="menu" class="w100">
                 <div class="list-menu">
                     <div class="logo">
                         <img src="img/logo/logo.png">
                     </div>
                     <div class="menu-item">
-                        <span id="shop" data-toggle="dropdown">SHOP</span>
+                        <span id="shop" data-toggle="dropdown">Shop</span>
                         <div id="dropdown-shop" class="dropdown-menu" aria-labelledby="shop">
                             <button class="dropdown-item">FUOCO (スチールパーティション)</button>
                             <button class="dropdown-item">AQUA (アルミパーティション)</button>
@@ -75,19 +58,21 @@
                     <div class="menu-item">
                         <span>2D-3DPlanner</span>
                     </div>
+                    <div class="menu-item">
+                        <span>Inquiry Form</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Confirm Order</span>
+                    </div>
                     <div class="menu-item selected">
-                        <span id="account" data-toggle="dropdown">ACCOUNT</span>
-                        <div id="dropdown-account" class="dropdown-menu" aria-labelledby="account">
+                        <span id="account" data-toggle="dropdown">My Page</span>
+                        <div class="dropdown-menu" aria-labelledby="account">
                             <button class="dropdown-item" id="my-account">My Account</button>
                             <button class="dropdown-item" id="my-cart">My Cart</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div id="slider-bar" class="w100 d-none">
-            slider
         </div>
     </header>
     <content>
@@ -120,6 +105,189 @@
                 新規ユーザーの方は
                 <a href="#"> こちら </a>
                 からご登録ください
+            </div>
+        </div>
+        <div id="register" class="d-none">
+            <div class="form-register">
+                <div class="register-title">
+                    <h4>新規アカウントの作成</h4>
+                </div>
+                <div class="rule-register">
+                    <form>
+                        <div class="reg-row">
+                            <div class="reg-lable">
+                                <label> 氏名 </label>
+                            </div>
+                            <div class="reg-mandatory text-danger">
+                                (必須)
+                            </div>
+                            <div class="reg-input">
+                                <input type="text" class="form-control" title="この項目に入力してください。" />
+                            </div>
+                        </div>
+                        <div class="reg-row">
+                            <div class="reg-lable">
+                                <label> 部署名 </label>
+                            </div>
+                            <div class="reg-mandatory text-danger">
+                                &nbsp;
+                            </div>
+                            <div class="reg-input">
+                                <input type="text" class="form-control" title="この項目に入力してください。" />
+                            </div>
+                        </div>
+                        <div class="reg-row">
+                            <div class="reg-lable">
+                                <label> 役職 </label>
+                            </div>
+                            <div class="reg-mandatory text-danger">
+                                &nbsp;
+                            </div>
+                            <div class="reg-input">
+                                <input type="text" class="form-control" title="この項目に入力してください。" />
+                            </div>
+                        </div>
+                        <div class="reg-row">
+                            <div class="reg-lable">
+                                <label> 郵便番号 </label>
+                            </div>
+                            <div class="reg-mandatory text-danger">
+                                (必須)
+                            </div>
+                            <div class="reg-input">
+                                <input type="text" class="form-control" title="この項目に入力してください。" />
+                            </div>
+                        </div>
+                        <div class="reg-row">
+                            <div class="reg-lable">
+                                <label> 地域 </label>
+                            </div>
+                            <div class="reg-mandatory text-danger">
+                                (必須)
+                            </div>
+                            <div class="reg-input">
+                                <select class="custom-select">
+                                    <option value="Bowie" selected>北海道</option>
+                                    <option value="Prince">青森県</option>
+                                    <option value="Kanye">秋田県</option>
+                                    <option value="Taylor Swift">岩手県</option>
+                                    <option value="Item 1">宮城県</option>
+                                    <option value="Item 2">山形県</option>
+                                    <option value="Item 3">福島県</option>
+                                    <option value="Item 4">茨城県</option>
+                                    <option value="Item 5">栃木県</option>
+                                    <option value="Item 6">群馬県</option>
+                                    <option value="Item 7">埼玉県</option>
+                                    <option value="Item 8">東京都</option>
+                                    <option value="Item 9">千葉県</option>
+                                    <option value="Item 10">神奈川県</option>
+                                    <option value="Item 11">新潟県</option>
+                                    <option value="Item 12">石川県</option>
+                                    <option value="Item 13">富山県</option>
+                                    <option value="Item 15">福井県</option>
+                                    <option value="Item 16">山梨県</option>
+                                    <option value="Item 14">長野県</option>
+                                    <option value="Item 18">岐阜県</option>
+                                    <option value="Item 17">静岡県</option>
+                                    <option value="Item 19">愛知県</option>
+                                    <option value="Item 20">三重県</option>
+                                    <option value="Item 21">滋賀県</option>
+                                    <option value="Item 22">京都府</option>
+                                    <option value="Item 23">大阪府</option>
+                                    <option value="Item 24">兵庫県</option>
+                                    <option value="Item 25">奈良県</option>
+                                    <option value="Item 26">和歌山県</option>
+                                    <option value="Item 27">鳥取県</option>
+                                    <option value="Item 28">島根県</option>
+                                    <option value="Item 29">岡山県</option>
+                                    <option value="Item 30">広島県</option>
+                                    <option value="Item 31">山口県</option>
+                                    <option value="Item 32">徳島県</option>
+                                    <option value="Item 33">愛媛県</option>
+                                    <option value="Item 34">香川県</option>
+                                    <option value="Item 35">高知県</option>
+                                    <option value="Item 36">福岡県</option>
+                                    <option value="Item 37">佐賀県</option>
+                                    <option value="Item 38">長崎県</option>
+                                    <option value="Item 39">大分県</option>
+                                    <option value="Item 40">熊本県</option>
+                                    <option value="Item 41">宮崎県</option>
+                                    <option value="Item 42">鹿児島県</option>
+                                    <option value="Item 43">沖縄県</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="reg-row">
+                            <div class="reg-lable">
+                                <label> 住所 </label>
+                            </div>
+                            <div class="reg-mandatory text-danger">
+                                (必須)
+                            </div>
+                            <div class="reg-input">
+                                <input type="text" class="form-control" title="この項目に入力してください。" />
+                            </div>
+                        </div>
+                        <div class="reg-row">
+                            <div class="reg-lable">
+                                <label> 電話番号 </label>
+                            </div>
+                            <div class="reg-mandatory text-danger">
+                                (必須)
+                            </div>
+                            <div class="reg-input">
+                                <input type="text" class="form-control" title="この項目に入力してください。" />
+                            </div>
+                        </div>
+                        <div class="reg-row">
+                            <div class="reg-lable">
+                                <label> 携帯電話 </label>
+                            </div>
+                            <div class="reg-mandatory text-danger">
+                                (必須)
+                            </div>
+                            <div class="reg-input">
+                                <input type="text" class="form-control" title="この項目に入力してください。" />
+                            </div>
+                        </div>
+                        <div class="reg-row">
+                            <div class="reg-lable">
+                                <label> メールアドレス </label>
+                            </div>
+                            <div class="reg-mandatory text-danger">
+                                (必須)
+                            </div>
+                            <div class="reg-input">
+                                <input type="text" class="form-control" title="この項目に入力してください。" />
+                            </div>
+                        </div>
+                        <div class="reg-row">
+                            <div class="reg-lable">
+                                <label> メールアドレス再入力 </label>
+                            </div>
+                            <div class="reg-mandatory text-danger">
+                                (必須)
+                            </div>
+                            <div class="reg-input">
+                                <input type="text" class="form-control" title="この項目に入力してください。" />
+                            </div>
+                        </div>
+                        <div class="reg-purview">
+                            <h3> プライバシー規約 </h3>
+                            <div class="detail-purview">
+
+                            </div>
+                        </div>
+                        <div class="reg-btn">
+                            <div class="btn-back text-center">
+                                <button type="button" class="btn btn-secondary"> 戻る </button>
+                            </div>
+                            <div class="btn-register text-center"> 
+                                <button type="button" class="btn btn-primary"> 同意して確認 </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </content>
@@ -237,7 +405,8 @@
                         <a href="#">プライバシー規約 </a>
                     </li>
                     <li>
-                        アカウント情報の <br> 変更・削除
+                        アカウント情報の
+                        <br> 変更・削除
                     </li>
                 </ul>
             </div>
@@ -247,10 +416,10 @@
                 </div>
                 <ul>
                     <li>
-                        販売 : 株式会社パレス 
+                        販売 : 株式会社パレス
                     </li>
                     <li>
-                        <span class="r2-contact-left">  所在地 : </span>
+                        <span class="r2-contact-left"> 所在地 : </span>
                         <span class="r2-contact-right">
                             <p>〒163-0444</p>
                             <p>東京都新宿区西新宿 2-1-1</p>
@@ -258,10 +427,10 @@
                         </span>
                     </li>
                     <li>
-                        TEL : 03-5809-3418 
+                        TEL : 03-5809-3418
                     </li>
                     <li>
-                        Mail : info@m-palace.jp 
+                        Mail : info@m-palace.jp
                     </li>
                     <li>
                         <a href="#" class="link-http"> https://www.m-place.jp </a>
@@ -269,7 +438,7 @@
                 </ul>
             </div>
             <div class="detail-contact">
-                Copyright  株式会社パレス.  All Rights Reserved.
+                Copyright 株式会社パレス. All Rights Reserved.
             </div>
         </div>
 >>>>>>> master
