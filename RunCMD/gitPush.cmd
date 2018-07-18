@@ -1,4 +1,3 @@
-cd ..
 git add *
-git commit -m "Final shop.html"
+git commit -m "Edit with merge locnguyen"
 git push origin phuong
