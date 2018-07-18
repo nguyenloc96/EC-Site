@@ -53,6 +53,7 @@ footer{
     letter-spacing: -0.5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .menu-item span{
     float: left;
     width: 15%;
@@ -65,6 +66,7 @@ footer{
     letter-spacing: -0.5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .logo img{
     width: 299px;
     height: 89px;
@@ -90,6 +92,9 @@ footer{
 
 #dropdown-shop{
     margin-left: -60px;
+}
+#dropdown-account{
+    margin-left: 45px;
 }
 
 /* Page Login */
