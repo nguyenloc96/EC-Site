@@ -1,3 +1,3 @@
 git add *
-git commit -m "Final SHOP"
+git commit -m "Fixed Conflict"
 git push origin phuong
