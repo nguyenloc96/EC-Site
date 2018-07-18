@@ -28,6 +28,8 @@ footer{
     height: 90px;
     text-align: center;
     justify-content: center;
+
+    /* Fixed Header */
     position: fixed;
     background-color: #FDFEFE;
     top: 0px;
@@ -64,8 +66,8 @@ footer{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .logo img{
-    width: 100%;
-    height: 100%;
+    width: 299px;
+    height: 89px;
     padding: 3px;
 }
 .selected span{
@@ -88,16 +90,6 @@ footer{
 
 #dropdown-shop{
     margin-left: -60px;
-}
-
-/* Slider bar*/
-#slider-bar{
-    min-height: 600px;
-    background-image: url('../img/slide-bar/home.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 /* Page Login */
