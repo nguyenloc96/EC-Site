@@ -144,12 +144,6 @@ footer{
     line-height: 50px;
     margin: 0 auto;
     cursor: pointer;
-
-    /*fixed header menu*/
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
 }
 #commercial span{
     color: #20303C;
@@ -186,11 +180,6 @@ footer{
     text-align: center;
     justify-content: center;
     background-color: white;
-    /*fixed header menu*/
-    position: fixed;
-    top: 53px;
-    width: 100%;
-    z-index: 1000;
 }
 .list-menu{
     width: 100%;

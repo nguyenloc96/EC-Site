@@ -195,13 +195,14 @@ footer{
 }
 
 .carousel-caption {
+    
     top: 40vh;
     bottom: auto;
 }
 
 .carousel-caption h3{
     /*color: #1E2D3B;*/
-    color: black;
+    color: #1e2d3b;
 	font-size: 50px;
 	font-family: 'lato';
 	letter-spacing: 5px;
@@ -211,7 +212,7 @@ footer{
 .carousel-caption h4{
 	font-size: 30px;
 	letter-spacing: 10px;
-    color: black;
+    color: #1e2d3b;
 }
 
 .carousel-caption button{
@@ -289,6 +290,40 @@ footer{
 
 .CategoryProduct img{
 	margin-top: 79px;
+    margin-bottom: 79px;
 	width: 100%;
 	height: 226px;
+}
+
+.CategoryProduct button{
+    color: white;
+    background-color: rgba(255, 52, 71, 1);
+    padding: 6px 24px;
+    border:none;
+}
+
+.CategoryProduct h4{
+    margin-top: 30px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.CategoryProduct h5{
+    opacity: 0.8;
+    font-size: 15px;
+    color: #1E2D3B;
+    line-height: 1.6em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.CategoryProduct a{
+    display: inline-block;
+    margin:40px 10px;
+}
+
+.CategoryProduct a:hover{
+    opacity: 0.7;
+    color: black;
+    text-decoration: none;
 }
