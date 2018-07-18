@@ -25,9 +25,10 @@ footer{
 /* Header */
 /* Menu */
 #menu{
-    height: 90px;
+    height: 14vh;
     text-align: center;
     justify-content: center;
+    overflow:hidden;
 
     /* Fixed Header */
     position: fixed;
@@ -48,18 +49,13 @@ footer{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
 }
 .logo{
-    width: 100%;
-    font-size: 20px;
-    color: #1E2D3B;
-    transition: color 0.4s ease 0s;
-    letter-spacing: -0.5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
 }
 
 .menu-item{
+    display: block;
     align-items: center;
     width: 100%;
 }
@@ -71,13 +67,12 @@ footer{
     background-color: #FDFEFE;
     transition: color 0.4s ease 0s;
     letter-spacing: -0.5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .logo img{
-    width: 299px;
-    height: 89px;
-    padding: 3px;
+    height: 100%;
+    object-fit: contain;
 }
 .selected span{
     color: #FF3447;

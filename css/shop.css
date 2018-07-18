@@ -26,14 +26,14 @@
 .carousel-caption h3{
     /*color: #1E2D3B;*/
     color: #1e2d3b;
-	font-size: 50px;
+	font-size: 7vh;
 	font-family: 'lato';
 	letter-spacing: 5px;
 	font-weight: bold;
 }
 
 .carousel-caption h4{
-	font-size: 30px;
+	font-size: 5vh;
 	letter-spacing: 10px;
     color: #1e2d3b;
 }
