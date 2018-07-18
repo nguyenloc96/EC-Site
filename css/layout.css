@@ -28,12 +28,8 @@ footer{
     height: 90px;
     text-align: center;
     justify-content: center;
-<<<<<<< HEAD
-    
-=======
 
     /* Fixed Header */
->>>>>>> master
     position: fixed;
     background-color: #FDFEFE;
     top: 0px;
