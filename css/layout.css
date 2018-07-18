@@ -85,6 +85,8 @@ footer{
 }
 /* Header */
 
+
+
 /* Commercial */
 #commercial{
     display: flex;
@@ -97,9 +99,15 @@ footer{
     line-height: 50px;
     margin: 0 auto;
     cursor: pointer;
+
+    /* Fixed header */
+    z-index: 101;
     position: fixed;
     top: 0;
     width: 100%;
+
+    /* Thêm border bottom màu tím */
+    border-bottom: 3px solid #a0138e;
 }
 #commercial span{
     color: #20303C;
@@ -107,9 +115,9 @@ footer{
     font-weight: bold;
 }
 #commercial .start button{
-    padding: 0px 30px;
+    padding: 0px 26px;
     margin: 4px;
-    line-height: 40px;
+    line-height: 35px;
     background: #eff1f2;
     color: #a0138e;
     border: 1px solid #a0138e;
@@ -135,6 +143,8 @@ footer{
     height: 90px;
     text-align: center;
     justify-content: center;
+
+    /* Fixed Header */
     position: fixed;
     background-color: #FDFEFE;
     top: 50px;
@@ -159,8 +169,8 @@ footer{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .logo img{
-    width: 100%;
-    height: 100%;
+    width: 299px;
+    height: 89px;
     padding: 3px;
 }
 .selected span{
@@ -186,15 +196,6 @@ footer{
 }
 #dropdown-account{
     margin-left: 45px;
-}
-/* Slider bar*/
-#slider-bar{
-    min-height: 600px;
-    background-image: url('../img/slide-bar/home.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 /* Page Login */
