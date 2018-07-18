@@ -143,7 +143,12 @@ footer{
     height: 90px;
     text-align: center;
     justify-content: center;
+<<<<<<< HEAD
     
+=======
+
+    /* Fixed Header */
+>>>>>>> master
     position: fixed;
     background-color: #FDFEFE;
     top: 50px;
@@ -237,7 +242,7 @@ footer{
     cursor: pointer;
     padding: 10px 15px;
 }
-.input-email input:hover, .input-password input:hover{
+.input-email input:hover, .input-password input:hover, .input-email input:focus, .input-password input:focus{
     box-shadow: none;
 }
 .btn-login{
