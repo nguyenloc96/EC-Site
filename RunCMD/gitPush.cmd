@@ -1,3 +1,3 @@
 git add *
-git commit -m "Edit with merge locnguyen"
+git commit -m "Final SHOP"
 git push origin phuong
