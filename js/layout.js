@@ -37,4 +37,26 @@ $(document).ready(function () {
         $('#login').addClass('d-none');
         $('#register').addClass('d-none');
     });
+    // Change number item in my cart
+    $('.change-number-item i.next').click(function(){
+        var perNumber = parseInt($(this).parent('.change-number-item').text());
+        perNumber++;
+        $(this).siblings('.change-number-item span').text(perNumber);
+        $(this).siblings('.change-number-item i.preview').css({"color":"#42CCCC", "cursor": "pointer"});
+    });
+    $('.change-number-item i.preview').click(function(){
+        var perNumber = parseInt($(this).parent('.change-number-item').text());
+        perNumber--;
+        if (perNumber > 0){
+            $(this).css("color", "#42CCCC");
+            $(this).siblings('.change-number-item span').text(perNumber);
+        }else if(perNumber = 1){
+            $(this).css({"color":"rgba(170, 35, 47, 1)", "cursor": "auto"});
+        }
+            
+    });
+    // Delete item in my cart
+    $('.delete-item').on('click', function(){
+        $(this).closest('div.item-in-cart').remove();
+    });
 });
