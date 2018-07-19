@@ -25,7 +25,7 @@ footer{
 /* Header */
 /* Menu */
 #menu{
-    height: 14vh;
+    height: 90px;
     text-align: center;
     justify-content: center;
 
@@ -41,37 +41,36 @@ footer{
     height: 100%;
     padding: 0px 180px;
     cursor: pointer;
-
-    /* Bố cục lại với display:flex */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
 }
 .logo{
+    float: left;
+    width: 25%;
     height: 100%;
-}
-
-.menu-item{
-    display: block;
-    align-items: center;
-    width: 100%;
+    font-size: 20px;
+    line-height: 90px;
+    color: #1E2D3B;
+    transition: color 0.4s ease 0s;
+    letter-spacing: -0.5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .menu-item span{
-    display: block;
+    float: left;
+    width: 15%;
+    height: 100%;
     font-size: 20px;
+    line-height: 90px;
     color: #1E2D3B;
     background-color: #FDFEFE;
     transition: color 0.4s ease 0s;
     letter-spacing: -0.5px;
-    font-family: 'Oswald', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .logo img{
+    width: 100%;
     height: 100%;
-    object-fit: contain;
+    padding: 3px;
 }
 .selected span{
     color: #FF3447;
@@ -80,6 +79,7 @@ footer{
     color: #FF3447;
 }
 .dropdown-menu .dropdown-item{
+    cursor: pointer;
     text-align: center;
     text-transform: uppercase;
 }
@@ -91,13 +91,14 @@ footer{
     background-color: #fff;
 }
 
-#dropdown-shop{
-    margin-left: -60px;
+#dropdown-account .dropdown-menu{
+    transform: translate3d(1025px, 0px, 0px) !important
 }
-#dropdown-account{
-    margin-left: 45px;
+/* dropdown shop*/
+#dropdown-shop .dropdown-menu{
+    transform: translate3d(350px, 0px, 0px) !important;
 }
-
+ 
 /* Page Login */
 #login{
     width: 100%;
@@ -327,6 +328,9 @@ a.link-http:hover{
         font-size: 11px;
         line-height: 25px;
     }
+    #dropdown-shop .dropdown-menu{
+        transform: translate3d(0px,35px,0px) !important;
+    }
     .login-title{
         padding-top: 15px;
     }
@@ -454,6 +458,9 @@ a.link-http:hover{
         font-size: 16px;
         line-height: 25px;
     }
+    #dropdown-shop .dropdown-menu{
+        transform: translate3d(20px,35px,0px) !important;
+    }
     /*register*/
     .form-register{
         margin: 20px 100px;
@@ -566,6 +573,9 @@ a.link-http:hover{
     .menu-item span{
         font-size: 18px;
     }
+    #dropdown-shop .dropdown-menu{
+        transform: translate3d(115px,0px,0px) !important;
+    }
     /*login*/
     #login{
         padding: 0px 80px;
@@ -609,6 +619,12 @@ a.link-http:hover{
     }
     .footer{
         margin: 0px 20px;
+    }
+    .list-menu{
+        padding: 0px 40px;
+    }
+    #dropdown-shop .dropdown-menu{
+        transform: translate3d(210px,0px,0px) !important;
     }
     /*register*/
     .form-register{
