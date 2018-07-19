@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
 
     <!-- W3Schools -->
@@ -68,9 +67,9 @@
                     <div class="menu-item selected">
                         <span id="shop" data-toggle="dropdown">Shop</span>
                         <div id="dropdown-shop" class="dropdown-menu" aria-labelledby="shop">
-                            <button class="dropdown-item">FUOCO (スチールパーティション)</button>
-                            <button class="dropdown-item">AQUA (アルミパーティション)</button>
-                            <button class="dropdown-item">OTHER (その他)</button>
+                            <button id="fuoco" class="dropdown-item">FUOCO (スチールパーティション)</button>
+                            <button id="aqua" class="dropdown-item">AQUA (アルミパーティション)</button>
+                            <button id="other" class="dropdown-item">OTHER (その他)</button>
                         </div>
                     </div>
                     <div class="menu-item">
@@ -95,170 +94,66 @@
         
     </header>
     <content>
-            <div id="slider-bar">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                          <li data-target="#myCarousel" data-slide-to="1"></li>
-                          <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-        
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                          <div class="item active">
-                            <img src="img/slide-bar/Slide1.jpg" alt="Slide 1">
-                            <div class="carousel-caption">
-                                <h3>ONLINE</h3>
-                                <h3>PARTITION SHOP</h3>
-                                <h4>Divide your space.</h4>
-                                <button>Try 2D/3D Planner</button>
-                            </div>
-                          </div>
-        
-                          <div class="item">
-                            <img src="img/slide-bar/Slide2.jpg" alt="Slide 2">
-                            <div class="carousel-caption">
-                                <h3>ONLINE</h3>
-                                <h3>PARTITION SHOP</h3>
-                                <h4>Divide your space.</h4>
-                                <button>Try 2D/3D Planner</button>
-                            </div>
-                          </div>
-                        
-                          <div class="item">
-                            <img src="img/slide-bar/Slide3.jpg" alt="Slide 3">
-                            <div class="carousel-caption">
-                                <h3>ONLINE PARTITION</h3>
-                                <h3>SHOP</h3>
-                                <h4>Divide your space.</h4>
-                                <button>Try 2D/3D Planner</button>
-                            </div>
-                          </div>
+        <div id="slider-bar">
+            <div id="carouselslide" class="carousel slide" data-ride="carousel">
+                <!-- Thẻ chứa ảnh của slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/slide-bar/Slide1.jpg" alt="Image 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>ONLINE PARTITION</h3>
+                            <h3>SHOP</h3>
+                            <h4>Divide your space.</h4>
+                            <button>Log In >></button>
                         </div>
-        
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                          <svg x="0px" y="0px" viewBox="0 0 39 11" enable-background="new 0 0 39 11">
-                                <polygon points="33.5,0 32.8,0.7 37.1,5 0,5 0,6 37.1,6 32.8,10.3 33.5,11 39,5.5 " fill="white">
-                                </polygon>
-                          </svg>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                          <svg version="1.1" x="0px" y="0px" viewBox="0 0 39 11" enable-background="new 0 0 39 11">
-                                <polygon points="33.5,0 32.8,0.7 37.1,5 0,5 0,6 37.1,6 32.8,10.3 33.5,11 39,5.5 " fill="white">
-                                </polygon>
-                          </svg>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/slide-bar/Slide2.jpg" alt="Image 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>ONLINE PARTITION</h3>
+                            <h3>SHOP</h3>
+                            <h4>Divide your space.</h4>
+                            <button>Log In >></button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/slide-bar/Slide3.jpg" alt="Image 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>ONLINE PARTITION</h3>
+                            <h3>SHOP</h3>
+                            <h4>Divide your space.</h4>
+                            <button>Log In >></button>
+                        </div>
+                    </div>
                 </div>
-        <div class="CategoryProduct">
-            <div class="row">
-                <div class="col-4">
-                    <img src="img/category-product/item1.png">
-                    <button>
-                        Add to CART
-                    </button>
-                    <h4>AQUA パネル PG</h4>
-                    <h4>10000</h4>
-                    <h5>アルミパーティション用パネルです。パネルとガラスが接合されています。</h5>
-                    <a href="PartitionList/FUOCO-パネル-PG">Read More</a>
-                    <i class="fas fa-arrow-right"></i>
+
+                <!-- Thẻ chứa nút điều hướng của slideshow -->
+                <div class="carousel-control-prev" href="#carouselslide" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left"></i>
+                    <span class="sr-only">Previous</span>
                 </div>
-                <div class="col-4">
-                    <img src="img/category-product/item1.png">
-                    <button>
-                        Add to CART
-                    </button>
-                    <h4>AQUA パネル PP</h4>
-                    <h4>10000</h4>
-                    <h5>アルミパーティション用パネルです。パネルとガラスが接合されています。</h5>
-                    <a href="PartitionList/FUOCO-パネル-PG">Read More</a>
-                    <i class="fas fa-arrow-right"></i>
+                <div class="carousel-control-next" href="#carouselslide" role="button" data-slide="next">
+                    <i class="fas fa-angle-right"></i>
+                    <span class="sr-only">Next</span>
                 </div>
-                <div class="col-4">
-                    <img src="img/category-product/item1.png">
-                    <button>
-                        Add to CART
-                    </button>
-                    <h4>AQUA 開戸（片開き） DP</h4>
-                    <h4>10000</h4>
-                    <h5>スチールパーティション用パネルです。パネルとパネルが接合されています。</h5>
-                    <a href="PartitionList/FUOCO-パネル-PG">Read More</a>
-                    <i class="fas fa-arrow-right"></i>
-                </div>
+
+                <!-- Nút chọn slide -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselslide" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselslide" data-slide-to="1"></li>
+                    <li data-target="#carouselslide" data-slide-to="2"></li>
+                </ol>
             </div>
-            <div class="row">
-                <div class="col-4">
-                    <img src="img/category-product/item1.png">
-                    <button>
-                        Add to CART
-                    </button>
-                    <h4>AQUA パネル PO</h4>
-                    <h4>10000</h4>
-                    <h5>アルミパーティション用パネルです。パネルとガラスが接合されています。</h5>
-                    <a href="PartitionList/FUOCO-パネル-PG">Read More</a>
-                    <i class="fas fa-arrow-right"></i>
-                </div>
-                <div class="col-4">
-                    <img src="img/category-product/item1.png">
-                    <button>
-                        Add to CART
-                    </button>
-                    <h4>AQUA 引戸（片引） HDP</h4>
-                    <h4>10000</h4>
-                    <h5>スチールパーティション用パネルです。パネルとパネルが接合されています。</h5>
-                    <a href="PartitionList/FUOCO-パネル-PG">Read More</a>
-                    <i class="fas fa-arrow-right"></i>
-                </div>
-                <div class="col-4">
-                    <img src="img/category-product/item1.png">
-                    <button>
-                        Add to CART
-                    </button>
-                    <h4>FUOCO パネル PO</h4>
-                    <h4>10000</h4>
-                    <h5>スチールパーティション用パネルです。パネルとパネルが接合されています。</h5>
-                    <a href="PartitionList/FUOCO-パネル-PG">Read More</a>
-                    <i class="fas fa-arrow-right"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <img src="img/category-product/item1.png">
-                    <button>
-                        Add to CART
-                    </button>
-                    <h4>FUOCO パネル P</h4>
-                    <h4>10000</h4>
-                    <h5>スチールパーティション用パネルです。パネルとパネルが接合されています。</h5>
-                    <a href="PartitionList/FUOCO-パネル-PG">Read More</a>
-                    <i class="fas fa-arrow-right"></i>
-                </div>
-                <div class="col-4">
-                    <img src="img/category-product/item1.png">
-                    <button>
-                        Add to CART
-                    </button>
-                    <h4>FUOCO パネル PP</h4>
-                    <h4>10000</h4>
-                    <h5>スチールパーティション用パネルです。パネルとパネルが接合されています。</h5>
-                    <a href="PartitionList/FUOCO-パネル-PG">Read More</a>
-                    <i class="fas fa-arrow-right"></i>
-                </div>
-                <div class="col-4">
-                    <img src="img/category-product/item1.png">
-                    <button>
-                        Add to CART
-                    </button>
-                    <h4>FUOCO 引戸（引分） HDG</h4>
-                    <h4>10000</h4>
-                    <h5>スチールパーティション用パネルです。パネルとパネルが接合されています。</h5>
-                    <a href="PartitionList/FUOCO-パネル-PG">Read More</a>
-                    <i class="fas fa-arrow-right"></i>
-                </div>
+        </div>
+        <div id="CategoryProduct">
+            <div class="ImageProducts">
+                <img class="imageTry2d3d" src="img/category-product/Try2D3DPlanner.jpg" alt="Try2D3DPlanner">
+                <img class="imageOfProduct" src="img/category-product/fuoco.png" alt="Fuoco">
+                <img class="imageOfProduct" src="img/category-product/aqua.png" alt="Aqua">
+                <img class="imageOfProduct" src="img/category-product/chair.png" alt="Chair">
+                <img class="imageOfProduct" src="img/category-product/latrina.png" alt="Latrina">
+                <img class="imageOther" src="img/category-product/other1.png" alt="Other">
+                <img class="imageOther" src="img/category-product/other2.png" alt="Other">
             </div>
         </div>
     </content>

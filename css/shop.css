@@ -2,28 +2,36 @@
 #slider-bar{
     width: 100vw;
     height: 600px;
-    overflow:hidden;
+}
+
+#carouselslide{
+    width: 100vw;
+    height: 90vh;
 }
 
 
+/* Thẻ chứa ảnh của slideshow */
+.carousel-inner{
+    width: 100%;
+    height: 100%;
+}
 
-.carousel-indicators{
-    display: block;
-	top: 82vh;
+.carousel-item{
+    width: 100%;
+    height: 100%;
 }
 
 .carousel-inner img{
     transform: translateY(-130px);
-	width: 100vw;
 }
 
 .carousel-caption {
-    top: 40vh;
+    top: 20vh;
     bottom: auto;
 }
 
 .carousel-caption h3{
-    /*color: #1E2D3B;*/
+    text-shadow: 2px 2px 2px white;
     color: #1e2d3b;
 	font-size: 7vh;
 	font-family: 'lato';
@@ -32,133 +40,79 @@
 }
 
 .carousel-caption h4{
-	font-size: 5vh;
+    text-shadow: 2px 2px 2px white;
+    font-size: 5vh;
+	font-family: 'lato';
 	letter-spacing: 10px;
     color: #1e2d3b;
 }
 
 .carousel-caption button{
+    margin-top: 5vh;
 	padding: 10px 30px 10px 30px;
 	
-	font-size: 20px;
+    font-size: 20px;
+    font-family: 'lato';
+    color: white;
 	text-decoration: none;
 	border:1px solid white;
-	background-color: rgba(255,255,255,0);
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .carousel-caption button:hover{
 	color:black;
-/* 	background-color:white;*/
 	background-color:#FFFFFF;
 }
 
-.carousel-control{
-	display: flex;
-	flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
+/* Thẻ chứa nút điều hướng của slideshow */
 
-	/*border: 3px solid green;*/
+.carousel-control-prev i{
+    font-size: 15vh;
 }
 
-.carousel-control.left,.carousel-control.right{
-    background: none !important;
-    /*filter: progid:none !important;*/
+.carousel-control-next i{
+    font-size: 15vh;
 }
 
-.left.carousel-control svg{
-	transform: rotate(180deg);
+/* Nút chọn slide */
+.carousel-indicators{
+    display: block;
+    margin-bottom: 7vh;
 }
 
-.carousel-control svg{
-	width: 60px;
-	height: 17px;
-	position: absolute;
-	top: 35%;
-	display: block;
-	/*border: 3px solid blue;*/
+.carousel-indicators li {
+    border-radius: 20px !important;
+    width: 20px !important;
+    height: 20px !important;
 }
 
 /*Product*/
-.CategoryProduct{
+#CategoryProduct{
     width: 100%;
     height: auto;
-    float: left;
-    padding:0 220px;
+    padding:0 15vw;
 }
 
-.CategoryProduct .row{
-	border-bottom: 20px solid #f7f7f7;
-}
-
-.CategoryProduct .row div{
-	background-color: white;
-	text-align: center;
-	border-right:20px solid #f7f7f7;
-}
-
-.CategoryProduct .row div:nth-child(1){
-	
-}
-
-.CategoryProduct .row div:nth-child(2){
-}
-
-.CategoryProduct .row div:nth-child(3){
-	border-right-color: white;
-}
-
-.CategoryProduct img{
-	margin-top: 79px;
-    margin-bottom: 79px;
-	width: 100%;
-	height: 226px;
-}
-
-.CategoryProduct button{
-    color: white;
-    background-color: rgba(255, 52, 71, 1);
-    padding: 6px 24px;
-    border:none;
-}
-
-.CategoryProduct h4{
-    margin-top: 30px;
-    font-size: 26px;
-    font-weight: bold;
-}
-
-.CategoryProduct h5{
-    opacity: 0.8;
-    font-size: 15px;
-    color: #1E2D3B;
-    line-height: 1.6em;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.CategoryProduct a{
-    display: inline-block;
-    margin:40px 10px;
-}
-
-.CategoryProduct a:hover{
-    opacity: 0.7;
-    color: black;
-    text-decoration: none;
-}
-
-/* shop_fuoco.html */
-
-#imgHeader{
-    margin: 0 150px;
-}
-
-#imgHeader img{
+.ImageProducts{
     width: 100%;
-    height: 510px;
-    object-fit: fill;
+    height: 100%;
+    padding: 20px 20px;
+    text-align: justify;
+    background-color: rgb(239, 241, 242);
 }
 
+.imageTry2d3d{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width:100%;
+}
+
+.imageOther{
+    margin-top:30px;
+    width:100%;
+}
+
+.imageOfProduct{
+    margin-top:30px;
+    width: 47%;
+}
