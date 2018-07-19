@@ -2,14 +2,14 @@
 #slider-bar{
     width: 100vw;
     height: 600px;
-    /* height: 115vh; */
     overflow:hidden;
 }
 
 
 
 .carousel-indicators{
-	
+    display: block;
+	top: 82vh;
 }
 
 .carousel-inner img{
@@ -18,7 +18,6 @@
 }
 
 .carousel-caption {
-    
     top: 40vh;
     bottom: auto;
 }
