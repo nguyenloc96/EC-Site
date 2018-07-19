@@ -11,6 +11,12 @@ $(document).ready(function () {
         }, 1000);
         
     });
+    $('.dropdown-menu .dropdown-item').click(function(){
+        setTimeout(() => {
+            $('.dropdown-menu').removeClass('show');
+        }, 1000);
+        
+    });
     $('#menu .menu-item').on('click', function () {
         $('#menu .menu-item').removeClass('selected');
         $(this).addClass('selected');
@@ -23,6 +29,12 @@ $(document).ready(function () {
         $('#sign-in').attr('disabled', true);
         $('#sign-out').removeClass('d-none');
         $('#login').removeClass('d-none');
+        $('#register').addClass('d-none');
+        $('#div-my-cart').addClass('d-none');
+    });
+    $('#my-cart').click(function () {
+        $('#div-my-cart').removeClass('d-none');
+        $('#login').addClass('d-none');
         $('#register').addClass('d-none');
     });
 });
