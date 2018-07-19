@@ -79,6 +79,7 @@ footer{
     color: #FF3447;
 }
 .dropdown-menu .dropdown-item{
+    cursor: pointer;
     text-align: center;
     text-transform: uppercase;
 }
@@ -90,13 +91,14 @@ footer{
     background-color: #fff;
 }
 
-#dropdown-shop{
-    margin-left: 355px;
+#dropdown-account .dropdown-menu{
+    transform: translate3d(1025px, 0px, 0px) !important
 }
-#dropdown-account{
-    margin-left: 45px;
+/* dropdown shop*/
+#dropdown-shop .dropdown-menu{
+    transform: translate3d(350px, 0px, 0px) !important;
 }
-
+ 
 /* Page Login */
 #login{
     width: 100%;
@@ -326,6 +328,9 @@ a.link-http:hover{
         font-size: 11px;
         line-height: 25px;
     }
+    #dropdown-shop .dropdown-menu{
+        transform: translate3d(0px,35px,0px) !important;
+    }
     .login-title{
         padding-top: 15px;
     }
@@ -453,6 +458,9 @@ a.link-http:hover{
         font-size: 16px;
         line-height: 25px;
     }
+    #dropdown-shop .dropdown-menu{
+        transform: translate3d(20px,35px,0px) !important;
+    }
     /*register*/
     .form-register{
         margin: 20px 100px;
@@ -565,6 +573,9 @@ a.link-http:hover{
     .menu-item span{
         font-size: 18px;
     }
+    #dropdown-shop .dropdown-menu{
+        transform: translate3d(115px,0px,0px) !important;
+    }
     /*login*/
     #login{
         padding: 0px 80px;
@@ -611,6 +622,9 @@ a.link-http:hover{
     }
     .list-menu{
         padding: 0px 40px;
+    }
+    #dropdown-shop .dropdown-menu{
+        transform: translate3d(210px,0px,0px) !important;
     }
     /*register*/
     .form-register{
