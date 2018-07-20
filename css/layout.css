@@ -236,16 +236,16 @@ a.link-http:hover{
     color: #FF3447 !important;
 }
 
-/* Register */
-#register{
+/* Register && Information Price*/
+#register, #information-customer{
     float: left;
     width: 100%;
     line-height: 2;
 }
-.form-register{
+.form-register, .form-price{
     margin: 20px 260px;
 }
-.register-title h4{
+.register-title h4, .price-title h4{
     font-size: 34px;
     color: #3B3A3A;
 }
@@ -294,15 +294,24 @@ a.link-http:hover{
     width: 100%;
     float: left;
 }
-.btn-back, .btn-register, .btn-price-quotation{
+.reg-option{
+    height: auto;
+}
+.custom-control{
+    margin-left: 20px;
+}
+.custom-control-label::before, .custom-control-label::after{
+    margin-top: 3px;
+}
+.btn-back, .btn-register, .btn-price-quotation, .btn-price{
     padding: 40px 20px;
     float: left;
     width: 50%;
 }
-.btn-back button, .btn-register button, .btn-price-quotation button{
+.btn-back button, .btn-register button, .btn-price-quotation button, .btn-price button{
     width: 150px;
 }
-.btn-back button:hover, .btn-register button:hover, .btn-price-quotation button:hover{
+.btn-back button:hover, .btn-register button:hover, .btn-price-quotation button:hover, .btn-price button:hover{
     background-color: #FF3447;
     border: 1px solid #fff;
 }
@@ -454,10 +463,10 @@ a.link-http:hover{
         font-size: 14px;
     }
     /*register*/
-    .form-register{
+    .form-register, .form-price{
         margin: 20px 10px;
     }
-    .register-title h4{
+    .register-title h4, .price-title h4{
         font-size: 20px;
     }
     .reg-purview{
@@ -467,10 +476,10 @@ a.link-http:hover{
         font-size: 20px;
         margin: 30px 0px;
     }
-    .btn-back, .btn-register , .btn-price-quotation{
+    .btn-back, .btn-register , .btn-price-quotation, .btn-price{
         padding: 20px 0px;
     }
-    .btn-back button, .btn-register button , .btn-price-quotation button{
+    .btn-back button, .btn-register button , .btn-price-quotation button, .btn-price button{
         width: 120px;
     }
     .reg-lable {
@@ -580,10 +589,10 @@ a.link-http:hover{
         transform: translate3d(20px,35px,0px) !important;
     }
     /*register*/
-    .form-register{
+    .form-register, .form-price{
         margin: 20px 100px;
     }
-    .register-title h4{
+    .register-title h4, .price-title h4{
         font-size: 20px;
     }
     .reg-purview{
@@ -593,7 +602,7 @@ a.link-http:hover{
         font-size: 20px;
         margin: 30px 0px;
     }
-    .btn-back, .btn-register , .btn-price-quotation{
+    .btn-back, .btn-register , .btn-price-quotation, .btn-price{
         padding: 20px 0px;
     }
     .reg-lable {
@@ -731,10 +740,10 @@ a.link-http:hover{
         font-size: 27px;
     }
     /*register*/
-    .form-register{
+    .form-register, .form-price{
         margin: 20px 110px;
     }
-    .register-title h4{
+    .register-title h4, .price-title h4{
         font-size: 28px;
     }
     .reg-purview h3{
@@ -780,10 +789,10 @@ a.link-http:hover{
         transform: translate3d(210px,0px,0px) !important;
     }
     /*register*/
-    .form-register{
+    .form-register, .form-price{
         margin: 20px 110px;
     }
-    .register-title h4{
+    .register-title h4, .price-title h4{
         font-size: 28px;
     }
     .reg-purview h3{

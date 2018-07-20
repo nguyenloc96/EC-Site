@@ -31,11 +31,19 @@ $(document).ready(function () {
         $('#login').removeClass('d-none');
         $('#register').addClass('d-none');
         $('#div-my-cart').addClass('d-none');
+        $('#information-customer').addClass('d-none');
     });
     $('#my-cart').click(function () {
         $('#div-my-cart').removeClass('d-none');
         $('#login').addClass('d-none');
         $('#register').addClass('d-none');
+        $('#information-customer').addClass('d-none');
+    });
+    $('.btn-price-quotation').click(function () {
+        $('#information-customer').removeClass('d-none');
+        $('#login').addClass('d-none');
+        $('#register').addClass('d-none');
+        $('#div-my-cart').addClass('d-none');
     });
     // Change number item in my cart
     $('.change-number-item i.next').click(function(){
