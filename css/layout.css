@@ -180,6 +180,7 @@ footer{
     text-decoration: none;
     color: rgba(170, 35, 47, 1);
 }
+
 /*Footer*/
 .footer{
     min-height: 400px;
@@ -401,6 +402,31 @@ a.link-http:hover{
     border-radius: 7px;
     background-color: rgba(227, 226, 226, 1);
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+/* Confirm Order */
+#confirm-order{
+    width: 100%;
+    float: left;
+}
+.p-confirm{
+    margin: 20px 240px;
+    border: 1px solid red;
+}
+
+.information-order{
+    width: 100%;
+    border: 1px solid yellow;
+    min-height: 600px;
+}
+.infor-user{
+    width: 70%;
+    float: left;
+    border: 1px solid red;
+}
+.infor-producer{
+    width: 30%;
+    float: left;
+    border: 1px solid red;
 }
 /* Responesive */
 /* Dành cho điện thoại hiện ngang*/
