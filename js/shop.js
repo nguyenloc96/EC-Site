@@ -4,7 +4,7 @@ $(document).ready(function () {
         $('#ImageProducts').css('display','none');
 
         $('#imagefuoco').css('display','block');
-        $('#ListItem').css('display','block');
+        $('#ListItem').css('display','flex');
     });
 
     $('#shop').click(function () {
